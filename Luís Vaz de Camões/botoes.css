@@ -1,0 +1,31 @@
+a{
+    padding: 10px 10px; /*altura e largura do botao*/
+    background: #037F8C;
+    border: 1px solid black;
+    letter-spacing: 1px; /*determina ate onde é possivel clicar no botao (colocar no mesmo tamanho do "border")*/
+    border-radius: 5px;
+    text-align: center;
+    font-family: sans-serif;
+    text-decoration: none; /*retira qualquer "decoração" do texto, ex: underline*/
+}
+
+a:hover{ /*executará uma ação ao passar o cursor por cima*/
+    background: #05b4c7;
+    transition: .6s;
+}
+
+a span{
+    color: rgb(255, 255, 255); /*Cor do texto*/
+}
+/* centralizando */
+.bt1{
+    text-align: center;
+}
+
+.bt2{
+    text-align:center;
+}
+
+.bt3{
+    text-align: center;
+}

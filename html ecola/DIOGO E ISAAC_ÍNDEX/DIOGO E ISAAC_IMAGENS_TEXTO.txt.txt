@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>IMAGENS ALEATÓRIAS</title>
+</head>
+<body>
+<p> <img src="macaco.jpg" align="left" height="200" width="200"> <br>
+<br>
+<br>
+<br>
+<br>
+Este macaco é da espécie macaco-negro, este é considerado um animal de
+estimação. </p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p> <img src="skye.png" align="right" height="200" width="200"> <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+Este agente é de um jogo conhecido como, valorant, ou seja um boneco
+com o qual podemos jogar que tem as suas próprias habilidades. </p>
+<p> <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<img src="pessoa.gif" align="left" height="200" width="500"> <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+Este homem parece feliz e tranquilo enquanto caminha até ao café onde
+poderá desfrutar do seu abatanado. </p>
+<p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+----------------------------------------------------------------------------------------------------------------------
+<a href="DIOGO E ISAAC_SITE- ÍNDEX.html"> <b>VOLTAR</b></a>
+----------------------------------------------------------------------------------------------------------------------
+</p>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<html>
+     <head>
+	   <title> IMAGENS ALEAT�RIAS   </title>
+	 </head>
+	 <body>
+	    <p> <img src=macaco.jpg align=left>
+		Este macaco � da esp�cie macaco-negro, este � considerado um animal de estima��o. </p>
+		 <p> <img src=skye.png align=right>
+		Este agente � de um jogo conhecido como, valorant, ou seja um boneco com o qual podemos jogar que tem as suas pr�prias habilidades. </p>
+		 <p> <img src=pessoa.gif align=left>
+		Este homem parece feliz e tranquilo enquanto caminha at� ao caf� onde poder� desfrutar do seu abatanado. </p>
+	 </body>
+</html>	 
