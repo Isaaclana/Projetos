@@ -1,0 +1,105 @@
+body{
+    background-color: #9BA9B1;
+}
+
+main{
+    background-color: #EBF0F2;
+    min-width: 500px; /*Largura da minima da caixa de conteudo*/
+    max-width: 1440px; /*Largura da maxima da caixa de conteudo*/
+    padding: 25px; /*Define */
+    border-radius: 15px; /*Coloca curvas na caixa do conteudo*/
+    margin: auto; /*Força o texto ficar no meio*/
+}
+
+.tamanho-borda{
+    width: 75%;
+    margin: auto;
+    background-color: #3F4B66;
+    border-radius: 15px;
+}
+
+h1{
+    color: #0D0D0D;
+    text-decoration: underline; /*coloca underline*/
+    text-align: center;
+    text-shadow: 1px 1px 2px #9BA9B1; /*cria uma sobra no texto*/
+    padding-top: 10px;
+}
+
+h2{
+    color: #0D0D0D;
+    text-shadow: 1px 1px 2px #9BA9B1;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+p{
+    font-family: sans-serif;
+    text-indent: 8px;
+    padding: 0px 70px 0px 70px;
+    color:white;
+    margin:7px 0px 7px 0px;
+}
+
+ul{
+    color: white; 
+}
+
+li{
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    color: white;
+    margin: 0px 70px 0px 70px;
+}
+
+#principal{
+    text-align: center;
+}
+
+h1{
+    text-align: left;
+    padding: 0px 70px 0px 70px;
+}
+
+/* botao */
+a{
+    display: block;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #000000; /*cor da letra*/
+    border: 2px solid #000000; /*cria borda no botao*/
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    border-radius: 10px;
+  }
+  
+a span{
+    position: relative;
+    z-index: 2;
+  }
+  
+a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #3F4B66; /*cor de fundo do botao*/
+    transition: all .35s;
+    border-radius: 10px
+}
+  
+a:hover{
+    color: white; /*cor da letra com o cursor em cima*/
+}
+  
+a:hover:after{
+    width: 100%;
+}

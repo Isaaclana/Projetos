@@ -5,11 +5,10 @@ body{
 }
 
 .tamanho-borda{
-    width: 1000px;
+    width: 75%;
     margin: auto;
     background-color: #3F4B66;
     border-radius: 15px;
-    height: 720px;
 }
 
 h1{
@@ -35,6 +34,17 @@ p{
     margin:7px 0px 7px 0px;
 }
 
+.ftcamoes{
+    margin-right: 25px;
+    margin-left: 10px;
+    clear:right;
+    float: right;
+}
+
+img{
+    height: 230px;
+}
+
 main{
     background-color: #EBF0F2;
     min-width: 500px; /*Largura da minima da caixa de conteudo*/
@@ -42,4 +52,47 @@ main{
     padding: 25px; /*Define */
     border-radius: 15px; /*Coloca curvas na caixa do conteudo*/
     margin: auto; /*Força o texto ficar no meio*/
+}
+
+/*botao*/
+a{
+    display: block;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #000000; /*cor da letra*/
+    border: 2px solid #000000; /*cria borda no botao*/
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    border-radius: 10px;
+  }
+  
+a span{
+    position: relative;
+    z-index: 2;
+  }
+  
+a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #3F4B66; /*cor de fundo do botao*/
+    transition: all .35s;
+    border-radius: 10px
+}
+  
+a:hover{
+    color: white; /*cor da letra com o cursor em cima*/
+}
+  
+a:hover:after{
+    width: 100%;
 }

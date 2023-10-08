@@ -1,7 +1,7 @@
 a{
     padding: 10px 10px; /*altura e largura do botao*/
-    background: #037F8C;
-    border: 1px solid black;
+    background: #5b6c948f;
+    border: 2px solid rgba(29, 29, 29, 0.747);
     letter-spacing: 1px; /*determina ate onde é possivel clicar no botao (colocar no mesmo tamanho do "border")*/
     border-radius: 5px;
     text-align: center;
@@ -10,7 +10,7 @@ a{
 }
 
 a:hover{ /*executará uma ação ao passar o cursor por cima*/
-    background: #05b4c7;
+    background: #9ba9b15e;
     transition: .6s;
 }
 
@@ -28,4 +28,5 @@ a span{
 
 .bt3{
     text-align: center;
+    margin-bottom: 10px;
 }
