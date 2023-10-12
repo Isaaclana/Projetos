@@ -1,17 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
 }
 
 .sidebar{
-    margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
     border: 0;
     text-decoration: none;
     box-sizing: border-box;
     border-radius: 8px;
     width: 230px;
+    height: 50vh;
 
     display: flex;
     flex-direction: column;
@@ -26,8 +32,13 @@ a{
     height: 50px;
 }
 
+h3{
+    text-align: center;
+}
+
 h3:hover{
-    transition: 0.8s;
+    transition: 0.4s;
     background-color: rgba(128, 128, 128, 0.308);
-    border-radius: 10px;
+    padding: 8px;
+    text-decoration: underline;
 }
