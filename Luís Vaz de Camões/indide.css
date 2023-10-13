@@ -20,7 +20,7 @@ body{
 }
 
 h1{
-    color: black;
+    color: rgba(255, 255, 255, 0.825);
     text-decoration: underline;   /*Coloca underline no texto*/
     text-align: center;
     text-shadow: 2px 2px 1px #3F4B66;

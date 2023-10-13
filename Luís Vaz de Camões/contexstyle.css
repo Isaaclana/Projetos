@@ -12,18 +12,11 @@ body{
 }
 
 h1{
-    color: #0D0D0D;
+    color: rgba(255, 255, 255, 0.815);
     text-decoration: underline; /*coloca underline*/
     text-align: center;
     text-shadow: 1px 1px 2px #9BA9B1; /*cria uma sobra no texto*/
     padding-top: 10px;
-}
-
-h2{
-    color: #0D0D0D;
-    text-shadow: 1px 1px 2px #9BA9B1;
-    padding: 20px;
-    padding-bottom: 10px;
 }
 
 p{

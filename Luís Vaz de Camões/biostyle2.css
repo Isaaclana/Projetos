@@ -38,7 +38,7 @@ p{
 
 
 h1{
-    color: #0D0D0D;
+    color: rgba(255, 255, 255, 0.815);
     text-decoration: underline;
     text-align: center;
     text-shadow: 1px 1px 2px #9BA9B1;
@@ -46,7 +46,7 @@ h1{
 }
 
 h2{
-    color: #0D0D0D;
+    color: rgba(255, 255, 255, 0.815);
     text-shadow: 1px 1px 2px #9BA9B1;
     padding: 0px 20px 0px 20px;
     padding-bottom: 10px;
