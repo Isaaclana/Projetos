@@ -9,6 +9,11 @@ body{
     text-align: center;
 }
 
+img{
+    border-radius: 15px;
+    
+}
+
 .tamanhocaixa{
     width: 500px;
     background-color: #3F4B66;
