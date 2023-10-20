@@ -1,45 +1,55 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
 
 body{
-    background-color: #9BA9B1;
+    background-color: #212121;
 }
 
-.tamanho-borda{
-    width: 1000px;
-    margin: auto;
-    background-color: #3F4B66;
-    border-radius: 15px;
-    height: 720px;
-}
-
-h1{
-    color: #0D0D0D;
-    text-decoration: underline; /*coloca underline*/
+header{
+    background-color: black;
+    font-size: 1.1em;
     text-align: center;
-    text-shadow: 1px 1px 2px #9BA9B1; /*cria uma sobra no texto*/
-    padding-top: 10px;
+
+    padding: 28px;
 }
 
-h2{
-    color: #0D0D0D;
-    text-shadow: 1px 1px 2px #9BA9B1;
-    padding: 20px;
-    padding-bottom: 10px;
+header > h1{
+    color: white;
+}
+
+img{
+    height: 460px;
+    border-radius: 10px;
+}
+
+.imagem{
+    text-align: center;
+    margin: 20px;
 }
 
 p{
-    font-family: sans-serif;
-    text-indent: 8px;
-    padding: 0px 20px 0px 20px;
-    color:white;
-    margin:7px 0px 7px 0px;
+    position: relative;
+    left: 20.7%;
 }
 
-main{
-    background-color: #EBF0F2;
-    min-width: 500px; /*Largura da minima da caixa de conteudo*/
-    max-width: 1440px; /*Largura da maxima da caixa de conteudo*/
-    padding: 25px; /*Define */
-    border-radius: 15px; /*Coloca curvas na caixa do conteudo*/
-    margin: auto; /*Força o texto ficar no meio*/
+a{
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+a:hover{
+    background-color: white;
+    color: black;
+    transition: 0.6s;
 }
