@@ -35,8 +35,10 @@ section > h1{
 }
 
 section{
+    padding: 30px;
+    min-width: 400px;
+    max-width: 1000px;
     margin: auto;
-    width: 85vw;
 }
 
 p{
@@ -47,7 +49,6 @@ p{
     margin-bottom: 20px;
 }
 
-.imagem{
-    text-align: center;
-    min-width: 768px;
+img{
+    width: 100%;
 }
