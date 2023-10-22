@@ -40,4 +40,5 @@ p{
 
 .imagem{
   text-align: center;
+  min-width: 768px;
 }
