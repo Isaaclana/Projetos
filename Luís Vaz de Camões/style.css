@@ -64,9 +64,9 @@ menu > ul > li > a:hover{
 }
 
 main{
-    padding: 20px;
+    padding: 10px;
     margin: auto;
-    min-width: 400px;
+    min-width: 370px;
     max-width: 500px;
 }
 
@@ -74,10 +74,6 @@ img{
     border: 2px solid white;
     border-radius: 6px;
     width: 100%;
-}
-
-.imagem{
-    text-align: center;
 }
 
 p{
@@ -88,7 +84,7 @@ p{
 
 /* media-query */
 
-@media screen and (min-width: 810px) {
+@media screen and (min-width: 600px) {
     #burger {
         display: none;
     }

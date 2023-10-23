@@ -22,22 +22,25 @@ header > h1{
   color: white;
 }
 
+main{
+  padding: 10px;
+  margin: auto;
+  min-width: 370px;
+  max-width: 1000px;
+}
+
 section > h1{
   text-shadow: 3px 3px 2px black;
   font-size: 1.8rem;
   color: white;
 }
 
-section{
-  padding: 30px;
-  margin: auto;
-  min-width: 400px;
-  max-width: 1000px;
-}
+
 
 p{
   color: white;
   text-indent: 10px;
+  text-align: justify;
 }
 
 img{

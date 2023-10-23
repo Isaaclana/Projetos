@@ -31,10 +31,16 @@ section{
     margin: auto;
     color: white;
     margin-bottom: 15px;
+
+    min-width: 370px;
 }
 
 p{
     text-indent: 10px;
+}
+
+ul{
+    margin-left: 30px;
 }
 
 .bola-oca, ol{
