@@ -11,13 +11,43 @@ body{
 }
 
 header{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
     background-color: black;
     font-size: 1.1em;
+
     padding: 28px;
     margin-bottom: 20px;
 
     color: white;
     text-align: center;
+}
+
+header > menu > ul > li > a{
+    background-color: #111111;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    text-align: center;
+
+    border: 1px solid rgba(122, 122, 122, 0.685);
+    border-radius: 5px;
+    padding: 7px;
+}
+
+header > menu > ul > li > a:hover{
+    background-color: gray;
+    color: black;
+    transition: 0.8s;
+}
+
+header > menu > ul{
+    list-style: none;
+}
+
+header > menu{
+    margin-top: 10px;
 }
 
 section > h1{

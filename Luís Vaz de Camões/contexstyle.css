@@ -11,12 +11,37 @@ body{
 }
 
 header{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
     text-align: center;
     background-color: black;
     font-size: 1.1em;
 
     margin-bottom: 20px;
     padding: 28px;
+}
+
+header > menu > ul{
+    list-style: none;
+}
+
+header > menu> ul > li >a{
+    display: flex;
+    background-color: #111111;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+
+    border: 1px solid rgba(122, 122, 122, 0.685);
+    border-radius: 5px;
+    padding: 7px;
+}
+
+header > menu> ul > li >a:hover{
+    background-color: gray;
+    color: black;
+    transition: 0.8s;
 }
 
 header > h1{
