@@ -26,6 +26,13 @@ header{
 
 header > menu > ul > li > a{
   display: flex;
+}
+
+header > menu > ul{
+  list-style: none;
+}
+
+menu > ul > li > a{
   background-color: #111111;
   text-decoration: none;
   text-align: center;
@@ -36,7 +43,6 @@ header > menu > ul > li > a{
   border-radius: 5px;
   padding: 7px;
 }
-
 header > menu > ul{
   list-style: none;
 }
