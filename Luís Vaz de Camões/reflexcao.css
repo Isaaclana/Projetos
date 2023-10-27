@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body, html{
     background-color: #212121;
 }
 
@@ -14,65 +14,65 @@ header{
     display: flex;
     justify-content: space-between;
     justify-items: center;
+
     background-color: black;
+    color: white;
     font-size: 1.1em;
+    text-align: center;
 
     padding: 28px;
     margin-bottom: 20px;
-
-    color: white;
-    text-align: center;
 }
 
-header > menu > ul > li > a{
-    background-color: #111111;
-    color: white;
-    text-decoration: none;
-    font-size: 1.1em;
-    text-align: center;
+header> menu > ul{
+    list-style: none;
+}
 
+header> menu > ul > li > a{
+    display: flex;
+
+    background-color: #111111;
+    text-decoration: none;
+    color: white;
+
+    font-size: 1.1em;
+    padding: 7px;
     border: 1px solid rgba(122, 122, 122, 0.685);
     border-radius: 5px;
-    padding: 7px;
 }
 
-header > menu > ul > li > a:hover{
+header> menu > ul > li > a:hover{
     background-color: gray;
     color: black;
     transition: 0.8s;
 }
 
-header > menu > ul{
-    list-style: none;
-}
-
-header > menu{
-    margin-top: 10px;
-}
-
-section > h1{
+p, h1, h2, h3{
     color: white;
-    font-size: 1.8rem;
-    text-shadow: 3px 3px 2px black;
+}
+
+main{
+    padding: 10px;
+    margin: auto;
+    min-width: 360px;
+    max-width: 1000px;
 }
 
 section{
-    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section > div{
     margin: auto;
-    color: white;
-    margin-bottom: 15px;
-
-    min-width: 360px;
+    margin-bottom: 20px;
+    width: 400px;
 }
 
-p{
-    text-indent: 10px;
+section > div > h3{
+    font-style: italic;
 }
 
-ul{
-    margin-left: 30px;
-}
-
-.bola-oca, ol{
-    margin-left: 20px;
+section > div > p{
+    margin-bottom: 10px;
 }
