@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,600;0,700;1,300&display=swap');
+
+:root{
+    --fundo: #212121;
+    --letra: rgb(0, 0, 0);
+    --conteiners: rgba(0, 0, 0, 0.527);
+    --letra-cont: rgb(230,230,230);
+
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body{
+    min-height: 100%;
+}
+
+/* header */
+header > p{
+    color: var(--letra-cont);
+    padding-bottom: 50px;
+}
+
+header{
+    background-color:var(--fundo);
+    height: 200px;
+
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 50px;
+    font-size: 5em;
+    color: var(--letra-cont);
+}
+
+a{
+    text-decoration: none;
+    color:var(--letra-cont);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+/* header end */
+
+div > p{ /*selecionando apenas o "P" dentro das div's*/
+    color:var(--letra);
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.normal{
+    position: relative;
+    height: 80vh;
+}
+
+.texto{
+    position: absolute;
+    top: 30%;
+    left: 10px;
+}
+
+.texto > p{
+    margin-bottom: 40px;
+}
+
+#terceira-quarta{
+    position: absolute;
+    top: 5%;
+}
+
+#sexta-setima{
+    position: absolute;
+    top: 11%;
+}
+
+#terceiro{
+    height: 900px;
+    
+}
+
+.conteiner{
+    background-color:var(--conteiners) ;
+}
+
+#caneta{
+    
+    background-image: url(Imagens/caneta.jpg);
+    background-repeat: no-repeat; /*faz com que a imagem nao se repita*/
+    background-position: center center; /*determina o posicionamento da imagem background*/
+    background-attachment: fixed; /*mantem a imagem de fundo fixada onde foi designada*/
+    background-size: cover; /*preenche a imgame como background*/
+    height: 500px;
+}
+
+#lapis{
+    background-image: url(Imagens/lapis.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
+}
+
+.imagem{
+    position: relative;
+}
+
+.imagem p{
+    position: absolute;
+    background-color: var(--conteiners);
+    color: var(--letra-cont);
+    top: 17%;
+    left: 10px;
+    margin: 0;
+    padding: 0;
+    width: 460px;
+}
+
+footer{
+    background-color: var(--fundo);
+    color: var(--letra-cont);
+    text-align: center;
+}
