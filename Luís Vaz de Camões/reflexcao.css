@@ -39,6 +39,7 @@ header> menu > ul > li > a{
     padding: 7px;
     border: 1px solid rgba(122, 122, 122, 0.685);
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 header> menu > ul > li > a:hover{
@@ -47,8 +48,18 @@ header> menu > ul > li > a:hover{
     transition: 0.8s;
 }
 
-p, h1, h2, h3{
+p, h1, h2, h3, ul{
     color: white;
+}
+
+ul{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+h1{
+    text-shadow: 3px 3px 2px black;
+    font-size: 1.8rem;
 }
 
 main{
