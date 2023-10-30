@@ -6,46 +6,49 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body, html{
+body{
     background-color: #212121;
 }
 
 header{
-    display: flex;
-    justify-content: space-between;
-    justify-items: center;
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
 
-    background-color: black;
-    color: white;
-    font-size: 1.1em;
-    text-align: center;
+  background-color: black;
+  font-size: 1.1em;
+  text-align: center;
 
-    padding: 28px;
-    margin-bottom: 20px;
+
+  padding: 28px;
+  margin-bottom: 20px;
 }
 
-header> menu > ul{
-    list-style: none;
+header > menu > ul > li > a{
+  display: flex;
 }
 
-header> menu > ul > li > a{
-    display: flex;
-
-    background-color: #111111;
-    text-decoration: none;
-    color: white;
-
-    font-size: 1.1em;
-    padding: 7px;
-    border: 1px solid rgba(122, 122, 122, 0.685);
-    border-radius: 5px;
-    margin-top: 10px;
+header > menu > ul{
+  list-style: none;
 }
 
-header> menu > ul > li > a:hover{
-    background-color: gray;
-    color: black;
-    transition: 0.8s;
+menu > ul > li > a{
+  background-color: #111111;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+
+  font-size: 1.1em;
+  border: 1px solid rgba(122, 122, 122, 0.685);
+  border-radius: 5px;
+  padding: 7px;
+}
+
+header > menu > ul > li > a:hover{
+  background-color: gray;
+  color: black;
+  transition: 0.8s;
+
 }
 
 p, h1, h2, h3, ul{
@@ -57,7 +60,7 @@ ul{
     margin-bottom: 20px;
 }
 
-h1{
+main > h1{
     text-shadow: 3px 3px 2px black;
     font-size: 1.8rem;
 }
@@ -88,10 +91,14 @@ main{
     margin-bottom: 10px;
 }
 
+.reflexoes{
+    text-indent: 10px;
+}
+
 .reflexoes > h2{
     margin-bottom: 5px;
 }
 
-.reflexoes > p{
+.reflexoes > div{
     margin-bottom: 20px;
 }
