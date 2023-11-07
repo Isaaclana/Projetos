@@ -88,6 +88,15 @@ main{
     font-style: italic;
 }
 
+.estancias > div > h3 > a{
+    text-decoration: none;
+    color: white;
+}
+
+.estancias > div > h3 > a:hover{
+    text-decoration: underline;
+}
+
 .estancias > div > p{
     margin-bottom: 10px;
 }
@@ -107,4 +116,13 @@ main{
 
 .reflexoes > div{
     margin-bottom: 20px;
+}
+
+.reflexoes > div > h2 > a{
+    text-decoration: none;
+    color: white;
+}
+
+.reflexoes > div > h2 > a:hover{
+    text-decoration: underline;
 }
