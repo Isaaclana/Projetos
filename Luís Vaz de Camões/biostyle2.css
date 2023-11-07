@@ -24,33 +24,6 @@ header{
   margin-bottom: 20px;
 }
 
-header > menu > ul > li > a{
-  display: flex;
-}
-
-header > menu > ul{
-  list-style: none;
-}
-
-menu > ul > li > a{
-  background-color: #111111;
-  text-decoration: none;
-  text-align: center;
-  color: white;
-
-  font-size: 1.1em;
-  border: 1px solid rgba(122, 122, 122, 0.685);
-  border-radius: 5px;
-  padding: 7px;
-}
-
-header > menu > ul > li > a:hover{
-  background-color: gray;
-  color: black;
-  transition: 0.8s;
-
-}
-
 header > h1{
   color: white;
 }

@@ -1,9 +1,0 @@
-<html>
-     <head>
-	   <title> Exemplo de aplicação </title>
-	 </head>
-	 <body>
-	    <p> Copyright &copy; 2005 
-		 A minha marca registada &#174; é o simbolo de qualidade!
-	 </body>
-</html>	 
