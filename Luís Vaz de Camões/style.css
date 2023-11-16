@@ -64,16 +64,22 @@ menu > ul > li > a:hover{
 }
 
 main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     padding: 10px;
     margin: auto;
-    min-width: 360px;
+    min-width: 290px;
     max-width: 500px;
 }
 
 img{
     border: 2px solid white;
     border-radius: 6px;
-    width: 100%;
+    width: 350px;
+    height: 500px;
+    margin-bottom: 16px;
 }
 
 p{
@@ -84,7 +90,7 @@ p{
 
 /* media-query */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
     #burger {
         display: none;
     }
