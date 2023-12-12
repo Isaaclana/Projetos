@@ -14,7 +14,7 @@ body{
 header{
     background-color: black;
     padding-bottom: 13px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 header > h1{
@@ -64,21 +64,24 @@ menu > ul > li > a:hover{
 }
 
 main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    padding: 10px;
     margin: auto;
     min-width: 290px;
     max-width: 500px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-58%, -35%);
+}
+
+.imagem{
+    width: 290px;
 }
 
 img{
     border: 2px solid white;
     border-radius: 6px;
-    width: 350px;
-    height: 500px;
+    width: 100%;
     margin-bottom: 16px;
 }
 
