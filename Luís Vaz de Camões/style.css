@@ -60,7 +60,7 @@ menu > ul > li > a{
 menu > ul > li > a:hover{
     background-color: gray;
     color: black;
-    transition: 0.8s;
+    transition: 0.5s;
 }
 
 main{
@@ -85,10 +85,25 @@ img{
     margin-bottom: 16px;
 }
 
-p{
-    text-align: center;
-    font-size: 1.4em;
+button{
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    width: 150px;
+
+    background-color: #111111;
+    border: 1px solid rgba(122, 122, 122, 0.685);
+    border-radius: 5px;
     color: white;
+    cursor: pointer;
+    text-align: center;
+    padding: 0 20px;
+}
+
+button:hover{
+    background-color: gray;
+    color: black;
+    transition: 0.5s;
 }
 
 /* media-query */
