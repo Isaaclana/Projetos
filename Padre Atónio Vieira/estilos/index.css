@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,700;1,100;1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Fira-sans', sans-serif;
+}
+
+body{
+    background-color: #eee;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+}
+
+nav > ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 15px;
+}
+
+nav > ul > li:hover{
+    font-size: 1.1em; 
+    transition: all 0.5s ease;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.imagem{
+    position: absolute;
+    right: 0;
+}
