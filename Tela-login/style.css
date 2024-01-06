@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Heebo', sans-serif;
+}
+
+body{
+    background-color: #c7c7c7;
+    background: url(image/background.jpg) no-repeat left top;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 500px;
+    padding: 30px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #fff;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+
+header{
+    margin-bottom: 50px;
+}
+
+header h1{
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+header h2{
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.email, .password{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    width: 100%;
+    gap: 10px;
+}
+
+.email input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.548);
+    font-size: 1em;
+    outline: none;
+    padding: 5px;
+    width: 100%;
+    transition: all 0.1s ease;
+    color: white;
+}
+
+.email span{
+    color: rgba(128, 128, 128, 0.705);
+    font-size: 1.4em;
+}
+
+.email input:focus-within{
+    border-bottom: 2px solid rgba(128, 128, 128, 0.548);
+    border-radius: 1px;
+    font-size: 1.1em;
+}
+
+.password input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.548);
+    outline: none;
+    width: 100%;
+    font-size: 1em;
+    color: #fff;
+    transition: all 0.1s ease;
+}
+
+.password span{
+    color: rgba(128, 128, 128, 0.705);
+    font-size: 1.4em;
+}
+
+.password input:focus-within{
+    border-radius: 1px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.548);
+    font-size: 1.1em;
+}
+
+.secundary-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.secundary-button .frgt{
+    color: #0FC2C0;
+    text-decoration: none;
+}
+
+.secundary-button .new-member > button{
+    background: transparent;
+    padding: 5px 30px;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.secundary-buttons .new-member > button:hover{
+    background-color: #ffffff27;
+}
+
+.sign-login-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.login{
+    background: #ccc;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login:hover{
+    background-color: #cccccca8;
+}
+
+.sign{
+    background: transparent;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.sign:hover{
+    background-color: #cccccca8;
+    color: #000;
+}
+
+/*media-query*/
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+
+    body{
+        background-position: right;
+    }
+
+    .container{
+        width: 250px;
+        height: 470px;
+    }
+
+    header h1{
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    header h2{
+        font-size: 1.2em;
+    }
+}
