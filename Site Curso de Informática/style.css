@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    margin: auto;
+}
+
+body{
+    background-color: #212121;
+}
+
+nav, .apresentation, .knowledge, .ramoagrangente > .container, .formation > .container{
+    max-width: 1200px;
+    min-width: 360px;
+    margin: auto;
+}
+
+/*NAV CSS*/
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 26px;
+    transition: all 0.5s;
+    background-color: #212121;
+}
+
+.logo, .social-midia{
+    width: 80px;
+}
+
+.logo > img{
+    width: 100%;
+    border-radius: 6pc;
+    background-color: #ccc;
+}
+
+.nav-side{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+}
+
+.nav-side li a{
+    position: relative;
+    text-decoration: none;
+    color: #ccc;
+    font-size: 1.3rem;
+}
+
+.nav-side li a::after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    background-color: #ccc;
+    transition: all 0.3s ease;
+}
+
+.nav-side li a:hover::after{
+    width: 100%;
+}
+
+
+.social-midia{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    font-size: 1.5em;
+}
+
+.social-midia div a > i{
+    color: #ccc;
+}
+
+/*-----------------*/
+
+/*APRESENTATION CSS*/
+
+.apresentation{
+    display: flex;
+    align-items: center;
+    left: 20%;
+    height: 88vh;
+}
+
+.text > .container p{
+    font-size: 4rem;
+    color: #ccc;
+    font-weight: bold;
+}
+
+.text > .container p > span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #ccc;
+}
+
+/*-----------------*/
+
+/*KNOWLEDGE CSS*/
+
+.knowledge{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin: auto;
+}
+
+.knowledge > header{
+    text-align: center;
+    color: #ccc;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.knowledge section > header > h1{
+    font-size: 1.6rem;
+    color: #ccc;
+}
+
+.knowledge ul{
+    margin-top: 5px;
+}
+
+.knowledge p{
+    text-indent: 10px;
+}
+
+.knowledge  p, .knowledge ul > li{
+    color: #ccc;
+}
+
+.knowledge .container{
+    display: flex;
+    flex-direction: row;
+}
+
+.aprender, .modulos, .estagio{
+    padding: 30px;
+}
+
+.aprender{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*-----------------*/
+
+/*PROFESSIONAL CSS*/
+
+.ramoagrangente{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F4EEED;
+    height: 100vh;
+}
+
+.ramoagrangente > .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.ramoagrangente > .container > header{
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.ramoagrangente > .container > article{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.ramoagrangente > .container > article > hr{
+    border: none;
+    width: 2px;
+    height: 430px;
+    background-color: #000;
+    z-index: 1000;
+}
+
+.ramoagrangente > .container > article > .text{
+    display: flex;
+    align-items: center;
+    width: 600px;
+}
+
+.ramoagrangente > .container > article > .imagem{
+    display: flex;
+    align-items: center;
+    width: 570px;
+}
+
+.ramoagrangente > .container > article > .imagem > img{
+    width: 100%;
+}
+
+/*-----------------*/
+
+/*FORMATION CSS*/
+
+.formation{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.formation p, .formation ul li{
+    color: #ccc;
+}
+
+.formation .container{
+    display: flex;
+    justify-content: center;
+    background-color: #1a1a1a;
+    height: 60%;
+    width: 700px;
+}
+
+.formation .container .pap{
+    display: flex;
+    flex-direction: column;
+}
+
+.formation .container .pap header{
+    color: #ccc;
+    font-size: 2rem;
+    text-align: center;
+    margin: 60px 0 20px 0;
+}
+
+.pap-text{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 20px;
+}
