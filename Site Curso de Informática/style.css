@@ -36,7 +36,7 @@ nav{
     width: 80px;
 }
 
-.logo > img{
+.logo > a > img{
     width: 100%;
     border-radius: 6pc;
     background-color: #ccc;
