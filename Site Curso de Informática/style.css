@@ -36,7 +36,7 @@ nav{
     width: 80px;
 }
 
-.logo > img{
+.logo > a > img{
     width: 100%;
     border-radius: 6pc;
     background-color: #ccc;
@@ -150,7 +150,7 @@ nav{
 }
 
 .aprender, .modulos, .estagio{
-    padding: 30px;
+    padding: 50px;
 }
 
 .aprender{
