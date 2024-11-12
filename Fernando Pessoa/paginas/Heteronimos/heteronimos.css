@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto:wght@400;500;700&family=Smooch&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --Background: #EBF2F1;
+    --Primary-Color: #261121;
+    --Secundary-Color: #403139;
+    --Lyrics-Color: #000;
+    --Headers-Lyrics-Color: #fff;
+    --Tg-Color: #fff;
+    --Tg-bg-color: #261121;
+}
+
+/* Dark e Light Mode Css */
+
+body.dark{
+    --Background: #212121;
+    --Primary-Color: #403139;
+    --Secundary-Color: #261121;
+    --Lyrics-Color: #fff;
+    --Headers-Lyrics-Color: #fff;
+    --Tg-Color: #000;
+    --Tg-bg-color: #403139;
+}
+
+.dark-light{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 23px;
+    border-radius: 1pc;
+    background-color: var(--Tg-bg-color);
+    position: fixed;
+    right: 1%;
+    bottom: 2%;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.dark-light .toggle{
+    background-color: var(--Tg-Color);
+    width: 18px;
+    height: 18px;
+    border-radius: 5pc;
+    transform: scale(.8);
+    position: absolute;
+    left: 4px;
+    transition: .3s;
+}
+
+.dark-light.dark .toggle{
+    left: 25px;
+}
+
+/* Body e Html Css */
+
+body{
+    display: flex;
+    flex-direction: column;
+    background: var(--Background);
+    transition: .3s;
+}
+
+html{
+    height: 100%;
+}
+
+/* Header Css */
+
+header{
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: var(--Primary-Color);
+    color: var(--Headers-Lyrics-Color);
+    top: 0;
+    left: 0;
+}
+
+header > h1{
+    font-family: 'Dancing Script';
+    font-weight: bold;
+    font-size: 3em;
+    color: var(--Headers-Lyrics-Color);
+}
+
+.navbar-links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.navbar-links > li > a{
+    padding: 5px;
+    transition: 0.2s ease;
+    margin-bottom: 2px;
+}
+
+.navbar-links > li{
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.navbar-links > li > a::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    background-color: var(--Secundary-Color);
+    transition: .3s ease;
+}
+
+.navbar-links > li > a:hover::before{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: var(--Headers-Color);
+}
+
+/* Conteúdo */
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px;
+}
+
+p, .container li{
+    font-size: 1.2em;
+    color: var(--Lyrics-Color);
+}
+
+.introducao p {
+    margin-bottom: 0;
+}
+
+p{
+    margin-bottom: 8px;
+}
+
+.container li{
+    margin-left: 23px;
+}
+
+.sections, .caracteristicas{
+    margin-bottom: 32px;
+}
+
+.container  h1{
+    margin-bottom: 4px;
+    font-size: 1.7em;
+    color: var(--Lyrics-Color);
+}
+
+.nivel2{
+    margin-left: 20px;
+}
+
+span{
+    font-weight: bold;
+}
+
+.alberto-box, .ricardo-box, .alvaro-box{
+    gap: 100px;
+}
+
+.caracteristicas li{
+    margin-bottom: 4px;
+}
+
+/* Alberto Caeiro Css */
+
+.alberto-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.alberto-box .alberto-imagem{
+    width: 620px;
+    height: 245px;
+}
+
+.alberto-box .alberto-imagem img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Ricardo Reis Css */
+
+.ricardo-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ricardo-box .ricardo-imagem{
+    width: 620px;
+    height: 245px;
+}
+
+.ricardo-box .ricardo-imagem img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Álvaro de Campos Css */
+
+.alvaro-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.alvaro-box .alvaro-imagem{
+    width: 620px;
+    height: 250px;
+}
+
+.alvaro-box .alvaro-imagem img{
+    width: 100%;
+    height: 100%;
+}
