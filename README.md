@@ -11,4 +11,4 @@ Aprendendo sobre HTML
 <br>
 <a href="https://isaaclana.github.io/Projetos/Site%20Curso%20de%20Informática/index">Curso de Informática</a>
 <br>
-<a href="https://isaaclana.github.io/Projetos/Fernando%Pessoa/Páginas/Ínicio/inicio">Curso de Informática</a>
+<a href="https://isaaclana.github.io/Projetos/Fernando%Pessoa/Páginas/Ínicio/inicio">Site FErnando Pessoa</a>
