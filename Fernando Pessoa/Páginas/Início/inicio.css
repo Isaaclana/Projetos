@@ -262,3 +262,25 @@ img{
     font-family: 'Dancing Script', sans-serif;
     font-size: 3em;
 }
+
+/* Footer Css */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--Primary-Color);
+    color: var(--Headers-Lyrics-Color);
+    height: 40px;
+}
+
+footer p{
+    font-size: 1.2em;
+}
+
+.bold{
+    font-weight: bold;
+}
