@@ -32,3 +32,22 @@
     }
 
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .main-header{
+        padding: 20px;
+    }
+
+    .menu{
+        font-size: 1.2em;
+    }
+
+    .proj-cont{
+        gap: 70px;
+    }
+
+    .proj-cont section{
+        width: 300px;
+        height: 340px;
+    }
+}
