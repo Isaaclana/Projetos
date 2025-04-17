@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Found your BMI</title>
+</head>
+<body>
+
+    <header>
+        <h1>FoundBMI</h1>
+
+        <div class="light-dark" id="theme">
+            <div class="toggle"></div>
+        </div>
+    </header>
+
+    <div class="info-box" id="info-box">
+        <h2>Info</h2>
+        <p>This site was made only to improve my skills. None of your personal information will be shared nor saved in some sort of database.</p>
+        <p>Please enjoy the site as many as needed.</p>
+        <br>
+        <button id="info-btn" class="confirm-btn">OK</button>
+    </div>
+
+    <div class="container" id="main-container" style="display: none;">
+        <section class="bmi-calc">
+            <h1>BMI</h1>
+
+            <form id="info" class="informations">
+                <input type="number" id="height-info" pattern="^\d{1}(\.\d){1,2}" step="any" placeholder="Please type your height">
+                <input type="number" id="weight-info" pattern="^\d{1,3}(\.\d){1,2}" step="any" placeholder="Please type your weight">
+
+                <div class="form-btns">
+                    <button type="button" id="clear" class="clear-btn" onclick="clearAll()">Clear</button>
+                    <button type="submit" id="submit" class="confirm-btn">Submit</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="desc" class="description">
+            <h1>Description:</h1>
+            <span id="bmi" class="bmi-desc"></span>
+            <p id="text-desc" class="text-description"></p>
+        </section>
+    </div>
+
+    <script src="javascript.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,34 @@
+@media (min-width: 360px) and (max-width: 768px) {
+    .menu-link{
+        display: none;
+    }
+
+    .proj-cont section, .git-cont-w-img{
+        width: 250px;
+    } 
+
+    .projects header{
+        margin-bottom: 80px;
+    }
+
+    .proj-cont{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-sec{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about .about-image{
+        width: 200px;
+        height: 200px;
+    }
+
+    .txt-about-tb1{
+        width: 300px;
+    }
+
+}

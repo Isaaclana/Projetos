@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+    <title>Portfólio - Isaac Lana</title>
+</head>
+<body>
+    
+    <header class="main-header">
+        <div class="tittle">Isaac Lana</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#" class="menu-link">Home</a></li>
+                <li><a href="#about" class="menu-link">About Me</a></li>
+                <li><a href="#git" class="menu-link">Github</a></li>
+                <li><a href="#proj" class="menu-link">Projects</a></li>
+                <a href=""><button class="fb-btn">Leave a feedback</button></a>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="introduction" id="home">
+        <div class="intro-txt-box">
+            <p>Hi, my name is <span class="name">ISAAC</span><br>and this is my portfolio.</p>
+        </div>
+    </div>
+
+
+    <div class="container reveal about" id="about">
+        <header>
+            <i class="fa-solid fa-user"></i>
+            <h1>About Me</h1>
+        </header>
+
+        <section class="about-sec">
+            <div class="txt-about-tb1">
+                <p>I am a student who has an interest in web development. As I'm finishing my last year in school, I'm using this opportunity to improve my skills in  HTML, CSS and JavaScript.</p>
+                <p>If you leave any feedback I'd love it. It will also help my improvement.</p>
+            </div>
+            <div class="about-image"><img src="images/cute-skull.jpg"></div>
+        </section>
+    </div>
+
+
+    <div class="container reveal git" id="git">
+        <header>
+            <div class="git-tittle">
+                <i class="fa-brands fa-github"></i>
+                <h1>Github</h1>
+                <p>This is my GitHub. If you have any interest in my other projects feel free to check them out!</p>
+            </div>
+        </header>
+        <div class="git-cont-w-img">
+            <a href="https://github.com/Isaaclana/Projetos" target="_blank">
+                <img src="images/gitPage.png">
+                <p>isaaclana.github.io</p>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="container reveal projects" id="proj">
+        <header>
+            <i class="fa-solid fa-paintbrush"></i>
+            <h1>Projects</h1>
+            <p>These are the two projects that I created to present to my PAP</p>
+        </header>
+
+        <div class="proj-cont">
+            <section class="proj-imc">
+                <a href="../Calculo IMC/index.html" target="_blank">
+                    <img src="images/IMC.png">
+                    <div class="proj-txt-sec">
+                        <h1>Caldulador de IMC</h1>
+                        <p>A simple BMI calculator. Check it out if you wan't to see your BMI. </p>
+                    </div>
+                </a>
+            </section>
+            <section class="proj-JdP">
+                <a href="../Jogo de apostas/login/login.html" target="_blank">
+                    <img src="images/jogoApostas.png">
+                    <div class="proj-txt-sec">
+                        <h1>Jogo de Apostas</h1>
+                        <p>A gambling game to pass the time. You won't lose any money, so enjoy it as you wish!</p>
+                    </div>
+                </a>
+            </section>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+
+</body>
+</html>

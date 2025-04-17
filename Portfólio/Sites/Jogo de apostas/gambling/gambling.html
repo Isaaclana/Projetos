@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../image/dice.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Gambling Game</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Gambling Game</h1>
+        <p>User: <span id="user-name"></span></p>
+    </header>
+
+    <div class="container explanation-area" id="explanation-area">
+        <h1>How does the site work</h1>
+        <div class="text-box">
+            <p>Hello <b><span id="user-name-explanation"></span></b>, this is how it works:</p>
+            <p>This is a Dice Gambling. There will be two "dice" on the screen and you need to guess how much both of them will get. As you know, a normal dice only have six sides, so with two dice it'll be twelve, with that in mind you can bet a number between 2 and 12. You start with 50 points from the beginning and when you guess the right number that amount that you bet will be tripled.</p>
+            <p>Bet with responsability!</p>
+        </div>
+        <button class="btn-confirm" id="btn-confirm" onclick="startGamb()">Got it!</button>
+    </div>
+    
+    <div class="container bet-area" style="display: none;" id="bet-area">
+        <div class="points-area">
+            <span class="points-line">Points: <span class="bold" id="points">50</span></span>
+        </div>
+
+        <div class="centered-bet-area">
+            <div class="dice-area">
+                <input type="text" name="dices" value="0" id="dice1" readonly>
+                <input type="text" name="dices" value="0" id="dice2" readonly>
+            </div>
+
+            <div class="message" id="message"></div>
+
+            <form id="betting">
+                <div class="betting-area">
+                    <input type="number" name="diceNum" id="bet-dice" min="2" max="12" placeholder="Guess the number">
+                    <input type="number" name="bet" id="bet-value" min="1" placeholder="Enter your bet">
+                </div>
+
+                <button type="submit" id="insert-betting">Roll Dices</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="reset-box" id="reset-box" style="display: none;">
+        <h1>You lost</h1>
+        <span>Do you want to try again?</span>
+        <div class="btns" id="reset-btns">
+            <button class="btn-yes" id="btn-yes" onclick="reset()">Yes</button>
+            <button class="btn-no" id="btn-no" onclick="noReset()">No</button>
+        </div>
+    </div>
+
+    <div class="alert-box" id="alert-box" style="display: none;">
+        <div class="alert-area">
+            <h1>There is a problem!</h1>
+            <span id="problem-span"></span>
+            <br>
+            <br>
+            <button class="confirm-alert-btn" id="confirm-alert-btn" onclick="closeAlert()">Ok</button> 
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+
+</body>
+</html>

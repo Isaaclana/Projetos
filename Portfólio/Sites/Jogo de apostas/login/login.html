@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="shortcut icon" href="../image/dice.png"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Gambling game - Login</title>
+</head>
+<body>
+    
+    <div class="container" id="login">
+        <header>
+            <h1>Welcome to our site!</h1>
+            <span>Please insert your name</span>
+        </header>
+
+        <div class="image diceEmoji"><img src="../image/dice.png"></div>
+
+
+        <form id="login-form" class="login-form">
+            <div class="name-area">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="name" class="name-box" autocomplete="off" placeholder="Name..." maxlength="25">
+            </div>
+
+            <div class="check-box">
+                <input type="checkbox" id="checkbox18" name="18+">
+                <label for="checkbox18">Are you 18+?</label>
+            </div>
+
+            <input type="submit" class="btn-submit" id="create-account" onclick="showAlert()" value="Create Account">
+        </form>
+    </div>
+
+    <div class="alert-box" id="alert-box" style="display: none;">
+        <div class="alert-area">
+            <h1>There is a problem!</h1>
+            <span id="problem-span"></span>
+            <br>
+            <br>
+            <button class="confirm-alert-btn" id="confirm-alert-btn" onclick="closeAlert()">Ok</button>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+
+</body>
+</html>

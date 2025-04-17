@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&family=Poetsen+One&family=Poppins&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* 
+    Background colors: 
+    #0D1A26
+    #8F9BA6
+    #142F40
+*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #0D1A26;
+    color: #fff;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* Header */
+
+.main-header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 0 20px;
+    background: #0D1A26;
+    z-index: 100;
+}
+
+.tittle {
+    font-size: 2em;
+    font-family: 'Nova Mono';
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu li{
+    position: relative;
+
+}
+
+.menu li::before{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #D1D0D9;
+    box-shadow: 5px 5px 10px #D1D0D9;
+    transition: .4s ease-in-out;
+}
+
+.menu li:hover::before{
+    width: 100%;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.fb-btn{
+    background-color: #8F9BA6;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.fb-btn:hover{
+    background-color: #a5b4c2;
+}
+/* =========== */
+
+/* General Container */
+.container{
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2s ease, transform 2s ease;
+    height: 900px;
+    min-width: 360px;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 80px !important;
+    padding: 30px;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Nova Mono';
+}
+/* =========== */
+
+/* Intro */
+.introduction{
+    height: 100vh;
+    min-width: 360px;
+    margin: auto;
+    padding-top: 70px !important;
+    padding: 30px;
+}
+
+.intro-txt-box{
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.intro-txt-box p{
+    font-size: 4em;
+    font-family: 'Poetsen One';
+}
+
+.intro-txt-box .name{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #ccc;
+    font-size: 1.3em;
+    font-family: 'Nova Mono';
+}
+/* =========== */
+
+/* About */
+.about{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2s ease, transform 2s ease;
+}
+
+.about header{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+
+.about i{
+    font-size: 3em ;
+}
+
+.about-sec{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.txt-about-tb1{
+    width: 500px;
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+.about .about-image{
+    width: 400px;
+    height: 400px;
+}
+
+.about .about-image > img{
+    width: 100%;
+    height: 100%;
+}
+/* =========== */
+
+/* Css that'll be used to make an animation */
+.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+/* =========== */
+
+/* GitHub */
+.git-tittle{
+    text-align: center;
+    font-size: 2em;
+}
+
+.git-tittle i{
+    font-size: 3em;
+}
+
+.git-tittle p{
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+
+.git-cont-w-img{
+    margin: auto;
+    background-color: #fff;
+    width: 400px;
+    height: 200px;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.git-cont-w-img:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 29px 0px #2c688da9;
+}
+
+.git-cont-w-img a{
+    color: #0D1A26;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.git-cont-w-img img{
+    width: 100%;
+    height: 150px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    object-fit: cover;
+}
+
+.git-cont-w-img p{
+    margin: 10px 0 10px 0;
+    text-align: center;
+}
+/* =========== */
+
+/* Projects Css */
+.projects{
+    padding-bottom: 0;
+}
+
+.projects header{
+    text-align: center;
+    font-size: 2em;
+}
+
+.projects header p{
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+.projects i{
+    font-size: 3em;
+}
+
+.proj-cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    gap: 10em;
+}
+
+.proj-cont section {
+    background-color: #fff;
+    width: 500px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: justify;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.proj-cont section:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 29px 0px #2c688da9;
+}
+
+.proj-cont img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.proj-cont a{
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    margin: auto 0 auto 0;
+}

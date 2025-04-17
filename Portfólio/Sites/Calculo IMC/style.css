@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Dark and Light theme colors */
+:root{
+    --infobackground: #b3b3b3;
+    --background: #ccc;
+    --secnColor: #2D3E40;
+    --letters: #000;
+    --tittles: #387373;
+    --headercolor: #fff;
+    --borders: #000;
+    --placeholder: #4d4d4d;
+}
+
+body.dark{
+    --infobackground: #818181;
+    --background: #2e2e2e;
+    --secnColor: #387373;
+    --letters: #fff;
+    --tittles: #93BFB7;
+    --headercolor: #fff;
+    --borders: #fff;
+    --placeholder: #838383;
+}
+
+body{
+    background: var(--background);
+    color: var(--letters);
+    transition: .4s;
+}
+
+/* Header */
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--secnColor);
+    color: var(--headercolor);
+    padding: 30px;
+    font-size: 1.5em;
+}
+
+.light-dark {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    width: 45px;
+    height: 23px;
+    border-radius: 1pc;
+    background: #8f8f8f;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.toggle{
+    position: absolute;
+    left: 5%;
+    background: #fff;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    transform: scale(.8);
+    transition: .3s ease;
+}
+
+.light-dark.dark .toggle{
+    left: 23px;
+}
+
+/* Info */
+.info-box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--infobackground);
+    text-align: center;
+    width: 500px;
+    border-radius: 0.5em;
+    padding: 20px;
+}
+
+.confirm-btn{
+    padding: 5px;
+    width: 100px;
+    background: #28a745;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.confirm-btn:hover{
+    background: #238f3c;
+}
+
+/* Main container */
+.container{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    gap: 20px;
+}
+
+/* Sections */
+/* bmi-calc Section */
+.bmi-calc{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--borders); 
+    padding: 20px;
+    width: 350px;
+}
+
+.bmi-calc h1{
+    font-size: 2em;
+    color: var(--tittles);
+    margin-bottom: 40px;
+}
+
+.informations{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-btns{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    align-self: self-end;
+    gap: 10px;
+}
+
+.clear-btn{
+    padding: 5px;
+    width: 100px;
+    background: #b3b3b3;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.clear-btn:hover{
+    background: #8f8f8f;
+}
+
+input{
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    appearance: textfield;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--borders) !important;
+    padding: 5px;
+    background: transparent;
+    color: var(--letters);
+}
+
+input::placeholder{
+    color: var(--placeholder);
+    transition: .3s;
+}
+
+input.dark::placeholder{
+    color: var(--placeholder);
+}
+
+/* Description */
+.description{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--borders); 
+    padding: 20px;
+    width: 350px;
+}
+
+.description h1{
+    font-size: 2em;
+    color: var(--tittles);
+    margin-bottom: 40px;
+}
+
+.description span{
+    margin-bottom: 20px;
+}
+
+/* Alert box */
+.alert-container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--infobackground);
+    width: 400px;
+    padding: 20px;
+    border-radius: .5em;
+    color: var(--tittles);
+}

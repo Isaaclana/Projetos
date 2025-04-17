@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e1e2f, #141427);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    width: 100%;
+    padding: 30px 60px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 3em;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+header p{
+    font-size: 1.3em;
+}
+
+/* Shared Glassmorphism Card */
+.container,
+.reset-box,
+.alert-area {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    color: white;
+    padding: 30px;
+}
+
+/* Explanation Area */
+.explanation-area {
+    width: 600px;
+    text-align: center;
+}
+
+.explanation-area h1 {
+    margin-bottom: 20px;
+}
+
+.text-box {
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.btn-confirm {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-confirm:hover {
+    background: #0056b3;
+}
+
+/* Bet Area */
+.bet-area {
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    padding: 40px;
+    position: relative;
+    text-align: center;
+}
+
+.points-area {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.dice-area {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+#dice1, #dice2 {
+    width: 100px;
+    height: 100px;
+    font-size: 2.5em;
+    text-align: center;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    border: none;
+    pointer-events: none;
+}
+
+.betting-area {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#bet-dice, #bet-value {
+    width: 190px;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+
+input{
+    appearance: textfield;
+    outline: none;
+}
+
+#insert-betting {
+    padding: 12px 30px;
+    border-radius: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#insert-betting:hover {
+    background-color: #218838;
+}
+
+.message {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #f5f5f5;
+}
+
+/* Reset Box */
+.reset-box {
+    text-align: center;
+    width: 350px;
+}
+
+.reset-box h1 {
+    font-size: 2.5em;
+}
+
+.btn-yes, .btn-no {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-yes {
+    background: #4CAF50;
+}
+
+.btn-no {
+    background: #dc3545;
+}
+
+.btn-yes:hover {
+    background: #388e3c;
+}
+
+.btn-no:hover {
+    background: #c82333;
+}
+
+/* Alert Box */
+.alert-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: none; /* escondido por padrão */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.alert-area{
+    background-color: #212121;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.confirm-alert-btn{
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.confirm-alert-btn:hover{
+    background: #007bffc0;
+}
