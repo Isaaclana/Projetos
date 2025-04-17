@@ -160,6 +160,12 @@ header{
     background: #8f8f8f;
 }
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 input{
     margin-bottom: 20px;
     font-size: 1.2em;
