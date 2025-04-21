@@ -23,7 +23,6 @@ p, h1, span, label, i{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    height: 300px;
     background: linear-gradient(to bottom, #2121214f, #cdcdcd4f);
     border: 2px solid #cdcdcd4f;
     box-shadow: 4px 3px 10px;

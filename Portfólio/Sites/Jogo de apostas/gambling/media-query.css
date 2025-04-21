@@ -1,0 +1,33 @@
+@media (min-width: 360px) and (max-width: 768px){
+    header{
+        padding: 30px 20px;
+    }
+
+    header h1{
+        font-size: 1.4em;
+    }
+
+    .bet-area{
+        width: 400px;
+        height: 500px;
+    }
+
+    #bet-dice, #bet-value{
+        width: 240px;
+    }
+
+    .betting-area{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .explanation-area{
+        width: 400px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .bet-area{
+        width: 500px;
+    }
+}

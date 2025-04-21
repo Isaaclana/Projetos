@@ -1,0 +1,10 @@
+@media (min-width: 360px) and (max-width: 768px){
+    .info-box{
+        width: 350px;
+    }
+
+     .container{
+        transform: translate(-50%, -60%);
+        flex-direction: column;
+     }
+}
