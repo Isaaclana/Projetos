@@ -6,6 +6,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 body{
     background-color: #212121;
 }
@@ -14,55 +18,40 @@ header{
     display: flex;
     justify-content: space-between;
     justify-items: center;
-    text-align: center;
     background-color: black;
     font-size: 1.1em;
 
-    margin-bottom: 20px;
     padding: 28px;
-}
+    margin-bottom: 20px;
 
-header > h1{
     color: white;
-}
-
-section > p{
-    color: white;
+    text-align: center;
 }
 
 section > h1{
     color: white;
     font-size: 1.8rem;
-
     text-shadow: 3px 3px 2px black;
 }
 
 section{
-    padding: 10px;
-    min-width: 360px;
-    max-width: 1000px;
+    width: 80vw;
     margin: auto;
+    color: white;
+    margin-bottom: 15px;
+    min-width: 350px;
 }
 
 p{
     text-indent: 10px;
-    text-align: justify;
 }
 
-#primeiro, #segundo, #terceiro{
-    margin-bottom: 20px;
+ul{
+    margin-left: 30px;
 }
 
-div{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    min-width: 320px;
-    max-width: 800px;
-}
-
-img{
-    width: 100%;
+.bola-oca, ol{
+    margin-left: 20px;
 }
 
 .botao > a{

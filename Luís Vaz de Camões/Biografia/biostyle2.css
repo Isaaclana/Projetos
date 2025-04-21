@@ -6,6 +6,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+::-webkit-scrollbar{
+  display: none;
+}
+
 body{
   background-color: #212121;
 }
@@ -31,7 +35,7 @@ header > h1{
 main{
   padding: 10px;
   margin: auto;
-  min-width: 360px;
+  min-width: 350px;
   max-width: 1000px;
 }
 

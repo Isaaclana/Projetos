@@ -7,6 +7,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 body{
     background-color: #212121;
 }
@@ -15,6 +19,8 @@ header{
     background-color: black;
     padding-bottom: 13px;
     margin-bottom: 16px;
+    position: relative;
+    z-index: 10;
 }
 
 header > h1{
@@ -25,7 +31,6 @@ header > h1{
 
 #burger{
     display: block;
-
     color: white;
     background-color: #505050;
     padding: 10px;
@@ -64,25 +69,23 @@ menu > ul > li > a:hover{
 }
 
 main{
-    margin: auto;
     min-width: 290px;
     max-width: 500px;
-
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-58%, -35%);
+    transform: translate(-50%, -50%);
 }
 
 .imagem{
     width: 290px;
+    z-index: 1;
 }
 
 img{
     border: 2px solid white;
     border-radius: 6px;
     width: 100%;
-    margin-bottom: 16px;
 }
 
 button{
@@ -115,6 +118,7 @@ button:hover{
 
     menu {
         display: block;
+        z-index: 1000;
     }
 
     menu > ul > li {
