@@ -224,3 +224,30 @@ nav ul li a{
     font-size: 2.3em;
     margin-bottom: 30px;
 }
+/* ============ */
+
+/* Footer */
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    height: 300px;
+}
+
+.merit-txt{
+    width: 600px;
+}
+
+.merit-txt span, .social-media .github{
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.social-media .github a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+}
+/* ============ */
