@@ -6,127 +6,106 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
     <link rel="shortcut icon" href="icons/escola-logo.png" type="image/x-icon">
 
     <title>Curso de Informática</title>
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <a href="https://esgamabarros.pt/gbarros/" target="blank"><img src="icons/escola-logo.png"></a>
-        </div>
+    <header class="main-header">
+        <a href="https://esgamabarros.pt/gbarros/" class="logo" target="_blank"><img src="imagem/gamaLogo.png"></a>
 
-        <ul class="nav-side">
-            <li><a href="#Curso">Curso</a></li>
-            <li><a href="#Ramo">Ramo</a></li>
-            <li><a href="#pap/provas">PAP/Provas</a></li>
-        </ul>
+        <nav>
+            <ul class="menu">
+                <li><a href="#Curso">Curso</a></li>
+                <li><a href="#Ramo">Ramo</a></li>
+                <li><a href="#pap/provas">PAP/Provas</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <div class="social-midia">
-            <div class="google">
-                <a href="https://accounts.google.com" target="blank"><i class="fa-brands fa-google"></i></a>
-            </div>
 
-            <div class="fb">
-                <a href="https://pt-pt.facebook.com/login/device-based/regular/login/" target="blank"><i class="fa-brands fa-facebook"></i></a>
-            </div>
-
-            <div class="git">
-                <a href="https://github.com/login" target="blank"><i class="fa-brands fa-github"></i></a>
+    <div class="presentation">
+        <div class="presentation-container">
+            <div class="text">
+                <p class="noIndent">Bem-vindo à demonstração <br> do curso de <span>INFORMÁTICA</span>.</p>
             </div>
         </div>
-    </nav>
+    </div>
 
 
-    <section class="apresentation">
-        <div class="text">
-            <div class="container">
-                <p>Bem-vindo à demonstração do curso de <span>INFORMÁTICA</span>.</p>
-            </div>
-        </div>
-    </section>
+    <section class="knowledge content" id="Curso">
+        <div class="container knowledge-container">
+            <header class="knowledge-header">
+                <h1>Como é o curso de Informática</h1>
+            </header>
 
-    <section class="knowledge" id="Curso">
-        <header class="headline">
-            <h1>Como é o curso de Informática</h1>
-        </header>
-
-        <div class="container">
-            <section class="section aprender">
-                <header>
-                    <h1>O que aprendemos?</h1>
-                </header>
-
-                <main>
-                    <p>No curso profissional de informática seguimos as bases de Matemática e Português para não prejudicar os alunos que desejam entrar no ensino superior.</p>
-                    <p>Quando falamos de matérias específicas do curso, temos o lado do software e hardware.</p>
-
-                    <ul>
-                        <li>
-                            Aprendemos sobre os vários dispositivos eletrônicos/tecnológico, em específico os seus componentes e como trabalhar com eles.
-                        </li>
-
-                        <li>
-                            Aprendemos a programar em várias linguagens de programação, tais como C e Java.
-                        </li>
-
-                        <li>
-                            Os alunos são ensinados a trabalhar com as diversas ferramentas da área, tal como o PowerPoint, Word, Excel, Editores de vídeo, Base de dados entre outros.
-                        </li>
-                    </ul>
-                </main>
-            </section>
-
-            <hr>
-
-            <section class="column">
-                <section class="section modulos">
+            <div class="txt-knowledge-content-box">
+                <section class="aprender">
                     <header>
-                        <h1>Módulos</h1>
+                        <h1>O que aprendemos?</h1>
                     </header>
                     <main>
-                        <p>Nos cursos profissionais as disciplinas funcionam de forma diferente do ensino básico.</p>
-
+                        <p>No curso profissional de informática seguimos as bases de Matemática e Português para não prejudicar os alunos que desejam entrar no ensino superior.</p>
+                        <p>Quando falamos de matérias específicas do curso, temos o lado do software e hardware.</p>
                         <ul>
                             <li>
-                                As disciplinas são dividas em Módulos que tem um número X de aulas para cumprir antes de serem completos.
+                                Aprendemos sobre os vários dispositivos eletrônicos/tecnológico, em específico os seus componentes e como trabalhar com eles.
                             </li>
-
                             <li>
-                                Se o aluno tiver um número equivalente ou maior que 10% das aulas totais irá chumbar a esse módulo. (Exemplo: um módulo com 40 aulas, o aluno pode apenas dar 3 faltas.)
+                                Aprendemos a programar em várias linguagens de programação, tais como C e Java.
                             </li>
-
                             <li>
-                                Se o aluno chumbar o módulo, o professor(a) irá ter de marcar uma marca de recuperação. Se o aluno chumbar á recuperação ele poderá ir a exame mais tarde.
+                                Os alunos são ensinados a trabalhar com as diversas ferramentas da área, tal como o PowerPoint, Word, Excel, Editores de vídeo, Base de dados entre outros.
                             </li>
                         </ul>
                     </main>
                 </section>
-
                 <hr>
-
-                <section class="section estagio">
-                    <header>
-                        <h1>Estágio</h1>
-                    </header>
-                    <main>
-                        <p>O estágio é um momento de aprendizagem e avaliação importante para o desenvolvimento do aluno. O aluno tem a opção de conseguir arranjar o seu estágio ou esperar com que o Diretor de Turma o faça, este será na sua área dedicada (Software/Hardware ou Ambos).</p>
-
-                        <ul>
-                            <li>
-                                2° Ano: 220h    
-                            </li>
-                            <li>
-                                3° Ano: 400h    
-                            </li>
-                        </ul>
-                    </main>
-                </section>
-            </section>
+                <div class="knowledge-section-row">
+                    <section class="modulos">
+                        <header class="knowledge-firstSection-header">
+                            <h1>Módulos</h1>
+                        </header>
+                        <main>
+                            <p>Nos cursos profissionais as disciplinas funcionam de forma diferente do ensino básico.</p>
+                            <ul>
+                                <li>
+                                    As disciplinas são dividas em Módulos que tem um número X de aulas para cumprir antes de serem completos.
+                                </li>
+                                <li>
+                                    Se o aluno tiver um número equivalente ou maior que 10% das aulas totais irá chumbar a esse módulo. (Exemplo: um módulo com 40 aulas, o aluno pode apenas dar 3 faltas.)
+                                </li>
+                                <li>
+                                    Se o aluno chumbar o módulo, o professor(a) irá ter de marcar uma marca de recuperação. Se o aluno chumbar á recuperação ele poderá ir a exame mais tarde.
+                                </li>
+                            </ul>
+                        </main>
+                    </section>
+                    <hr>
+                    <section class="estagio">
+                        <header class="knowledge-secondSection-header">
+                            <h1>Estágio</h1>
+                        </header>
+                        <main>
+                            <p>O estágio é um momento de aprendizagem e avaliação importante para o desenvolvimento do aluno. O aluno tem a opção de conseguir arranjar o seu estágio ou esperar com que o Diretor de Turma o faça, este será na sua área dedicada (Software/Hardware ou Ambos).</p>
+                            <ul>
+                                <li>
+                                    2° Ano: 220h
+                                </li>
+                                <li>
+                                    3° Ano: 400h
+                                </li>
+                            </ul>
+                        </main>
+                    </section>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="ramoagrangente" id="Ramo">
+
+    <div class="comprehensive-branch content" id="Ramo">
         <div class="container">
             <header>
                 <h1>Ramo Abrangente</h1>
@@ -137,25 +116,24 @@
                     <p>O ramo de informática é abrangente devido à natureza da tecnologia. A informática abrange várias áreas que estão sempre em evolução e que hoje em dia são necessárias. Não é nenhuma novidade que existe uma inovação constante e um crescimento contínuo da utilização da tecnologia. 
                     </p>
                 </div>
-
                 <hr>
-
                 <div class="imagem">
                     <img src="imagem/laptop-image-working.jpg">
                 </div>
             </article>
         </div>
-    </section>
+    </div>
 
-    <section class="formation">
+
+    <div class="formation content">
         <div class="container">
-             <article class="pap">
+            <article class="pap">
                 <header>
                     <h1 id="pap/provas">PAP/Provas Profissionais</h1>
-                 </header>
-
+                </header>
+                
                 <section class="first pap-text">
-                    <p>O curso de informático como qualquer outro curso  profissional é acompanhado por duas provas, a Pre-Pap e a PAP.</p>
+                    <p>O curso de informática como qualquer outro curso  profissional é acompanhado por duas provas, a Pre-Pap e a PAP.</p>
 
                     <br>
                     
@@ -163,18 +141,13 @@
                         <li>
                             A PAP consiste num projeto final de curso acompanhado com uma apresentação do mesmo, o tópico a ser desenvolvido tem de ser sobre algo ligado ao ramo do curso, informática. A PAP é feita no 3º ano do curso e é um projeto continuo, desenvolvido ao longo do ano com ajuda dos professores. A conclusão da PAP é obrigatória para o aluno concluir o curso
                         </li>
-
                         <li>
                             A Pre-Pap serve como um treino para a PAP, sendo feita no 2º ano do curso (11ºano).
                         </li>
                     </ul>
-
                 </section>
-             </article>
+            </article>
         </div>
-    </section>
-
-    <script src="javascript.js"></script>
-    
+    </div>
 </body>
 </html>

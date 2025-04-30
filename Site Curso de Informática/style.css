@@ -3,252 +3,224 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
 }
 
 html{
     scroll-behavior: smooth;
-    margin: auto;
+
 }
 
 body{
-    background-color: #212121;
+    background-color: #1f1f1f;
+    color: #fff;
 }
 
-nav, .apresentation, .knowledge, .ramoagrangente > .container, .formation > .container{
+p, ul{
+    font-size: 1.2em;
+    width: 100%;
+    text-align: justify;
+}
+
+p:not(.noIndent){
+    text-indent: 10px;
+
+}
+
+.noIndent{
+    text-align: start;
+}
+
+/* Standard */
+.container{
     max-width: 1200px;
-    min-width: 360px;
+    min-width: 350px;
     margin: auto;
 }
 
-/*NAV CSS*/
+.content{
+    height: 100vh;
+}
+/* ========== */
 
-nav{
+/* Main Header */
+.main-header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 26px;
-    transition: all 0.5s;
-    background-color: #212121;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #1f1f1f;
+    z-index: 1000;
 }
 
-.logo, .social-midia{
-    width: 80px;
+a{
+    width: 100px;
 }
 
-.logo > a > img{
+a img{
     width: 100%;
-    border-radius: 6pc;
-    background-color: #ccc;
 }
 
-.nav-side{
+nav .menu{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 50px;
     list-style: none;
+    gap: 20px;
 }
 
-.nav-side li a{
+nav ul li{
     position: relative;
-    text-decoration: none;
-    color: #ccc;
-    font-size: 1.3rem;
 }
 
-.nav-side li a::after{
+nav ul li::before{
     position: absolute;
     content: "";
-    height: 2px;
-    bottom: 0;
     left: 0;
+    bottom: 0;
     width: 0;
+    height: 2px;
     background-color: #ccc;
-    transition: all 0.3s ease;
+    transition: all .3s ease;
 }
 
-.nav-side li a:hover::after{
+nav ul li:hover::before{
     width: 100%;
 }
 
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+/* ========= */
 
-.social-midia{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 30px;
-    font-size: 1.5em;
+/* Presentation */
+.presentation{
+    height: 100vh;
 }
 
-.social-midia div a > i{
-    color: #ccc;
+.presentation .presentation-container{
+    position: relative;
+    top: 30%; /* Centralizar para celular em midia-query*/
 }
 
-/*-----------------*/
-
-/*APRESENTATION CSS*/
-
-.apresentation{
-    display: flex;
-    align-items: center;
-    left: 20%;
-    height: 88vh;
-}
-
-.text > .container p{
-    font-size: 4rem;
-    color: #ccc;
+.presentation .presentation-container .text{
+    position: absolute;
+    left: 5%;
+    font-size: 4em;
     font-weight: bold;
+    color: #fff;
 }
 
-.text > .container p > span{
+.presentation .presentation-container .text span{
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 2px #ccc;
+    -webkit-text-stroke: 2px #fff;
 }
 
-/*-----------------*/
+.knowledge-firstSection-header h1, .knowledge-secondSection-header h1, .aprender h1{
+    font-size: 1.8em;
+}
+/* ========= */
 
-/*KNOWLEDGE CSS*/
+/* Knowledge */
 
 .knowledge{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    height: 100vh;
-    margin: auto;
-}
-
-.knowledge > header{
-    text-align: center;
-    color: #ccc;
-    font-size: 2rem;
     margin-bottom: 30px;
 }
 
-.knowledge section > header > h1{
-    font-size: 1.6rem;
-    color: #ccc;
+.knowledge-header h1{
+    color: #fff;
+    font-size: 2.3em;
+    text-align: center;
 }
 
-.knowledge ul{
-    margin-top: 5px;
-}
-
-.knowledge p{
-    text-indent: 10px;
-}
-
-.knowledge  p, .knowledge ul > li{
-    color: #ccc;
-}
-
-.knowledge .container{
-    display: flex;
-    flex-direction: row;
-}
-
-.aprender, .modulos, .estagio{
-    padding: 50px;
-}
-
-.aprender{
+.txt-knowledge-content-box{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
-/*-----------------*/
+.txt-knowledge-content-box > hr{
+    background-color: #fff;
+    width: 100%;
+}
 
-/*PROFESSIONAL CSS*/
+.txt-knowledge-content-box section{
+    padding: 20px;
+}
 
-.ramoagrangente{
+.knowledge-section-row{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 20px;
+}
+
+.knowledge-section-row hr{
+    height: 100%;
+}
+/* ============ */
+
+/* Branch */
+.comprehensive-branch{
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #F4EEED;
-    height: 100vh;
+    color: #000;
 }
 
-.ramoagrangente > .container{
-    display: flex;
-    flex-direction: column;
-}
-
-.ramoagrangente > .container > header{
-    margin-bottom: 60px;
+.comprehensive-branch h1{
+    font-size: 2.3em;
     text-align: center;
-    font-size: 2rem;
+    margin-bottom: 40px;
 }
 
-.ramoagrangente > .container > article{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
+.comprehensive-branch article{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
 }
 
-.ramoagrangente > .container > article > hr{
+.comprehensive-branch hr{
     border: none;
+    height: 110%;
     width: 2px;
-    height: 430px;
     background-color: #000;
-    z-index: 1000;
 }
 
-.ramoagrangente > .container > article > .text{
-    display: flex;
-    align-items: center;
-    width: 600px;
-}
-
-.ramoagrangente > .container > article > .imagem{
-    display: flex;
-    align-items: center;
-    width: 570px;
-}
-
-.ramoagrangente > .container > article > .imagem > img{
+.comprehensive-branch .imagem{
     width: 100%;
 }
 
-/*-----------------*/
+.comprehensive-branch img{
+    width: 100%;
+}
+/* =========== */
 
-/*FORMATION CSS*/
-
+/* Formation */
 .formation{
     display: flex;
-    flex-direction: column;
-    height: 100vh;
 }
 
-.formation p, .formation ul li{
-    color: #ccc;
-}
-
-.formation .container{
+.formation article{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     background-color: #1a1a1a;
-    height: 60%;
-    width: 700px;
+    padding: 60px;
+    margin: auto;
+    width: 50%;
 }
 
-.formation .container .pap{
-    display: flex;
-    flex-direction: column;
-}
-
-.formation .container .pap header{
-    color: #ccc;
-    font-size: 2rem;
+.formation h1{
     text-align: center;
-    margin: 60px 0 20px 0;
-}
-
-.pap-text{
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    padding: 20px;
+    font-size: 2.3em;
+    margin-bottom: 30px;
 }
