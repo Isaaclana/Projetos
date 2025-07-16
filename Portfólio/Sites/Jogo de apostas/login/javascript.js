@@ -19,7 +19,7 @@ document.getElementById("login-form").addEventListener("submit", function(event)
         return;
     };
 
-    if(!check18) {
+    if (!check18) {
         showAlert("You need to have 18 years or more to create an account!");
         return;
     };
